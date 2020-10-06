@@ -29,3 +29,35 @@ export const TodoAddForm: React.FC<Props> = ({ addTodo }) => {
     </form>
   );
 };
+
+
+
+// This was the code that I have to make working. Above code I copied
+// import React, { useState } from 'react'
+
+// interface Props {
+//     addTodo: AddTodo;
+// }
+
+
+// export const TodoAddForm: React.FC<Props> = ({ addTodo }) => {
+
+//     const [newTodo, setNewTodo] = useState("");
+//     const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+//         setNewTodo(e.target.value);
+//     }
+    
+//     const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+//         e.preventDefault();
+//         addTodo(newTodo);
+//         setNewTodo("");
+//     }
+
+
+//     return (
+//         <form>
+//             <input type="text" onChange={handleInput}/>
+//             <button type="submit" onClick={handleSubmit}>Add Todo</button>
+//         </form>
+//     )
+// }
